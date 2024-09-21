@@ -1,15 +1,29 @@
+import java.util.Locale;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задача 1");
+        String firstName = "Ivan";
+        String lastName = "Ivanov";
+        String middleName = "Ivanovich";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.printf("Ф.И.О. сотрудника - %s", fullName);
+        System.out.println();
+        System.out.println();
+        System.out.println("Задача 2");
+        String fullNameUpperCase = fullName.toUpperCase();
+        System.out.printf("Данные Ф.И.О. сотрудника для заполнения отчета - %s\n", fullNameUpperCase);
+        System.out.println();
+        System.out.println("Задача 3");
+        fullName = "Иванов Семён Семёнович";
+        String result = fullName.replace("ё", "е");
+        System.out.printf("Данные Ф.И.О. сотрудника - %s\n", result);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+
+
+
+
         }
     }
-}
